@@ -45,9 +45,9 @@ dev = [
 cybr-ghost = "server:mcp.run"
 
 [project.urls]
-Homepage = "https://github.com/CybrFlux/cybr-ghost"
-Repository = "https://github.com/CybrFlux/cybr-ghost"
-Issues = "https://github.com/CybrFlux/cybr-ghost/issues"
+Homepage = "https://github.com/M4ST3R-C0NTR0L/cybr-ghost"
+Repository = "https://github.com/M4ST3R-C0NTR0L/cybr-ghost"
+Issues = "https://github.com/M4ST3R-C0NTR0L/cybr-ghost/issues"
 
 [tool.setuptools]
 py-modules = ["server"]

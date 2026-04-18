@@ -115,7 +115,7 @@ Desktop, custom SDKs). You drive it; it survives detection.
 
 ```bash
 # 1. Clone + install
-git clone https://github.com/CybrFlux/cybr-ghost
+git clone https://github.com/M4ST3R-C0NTR0L/cybr-ghost
 cd cybr-ghost
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
@@ -142,7 +142,7 @@ python3.12 -m venv .venv
 ### Steps
 
 ```bash
-git clone https://github.com/CybrFlux/cybr-ghost
+git clone https://github.com/M4ST3R-C0NTR0L/cybr-ghost
 cd cybr-ghost
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt

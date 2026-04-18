@@ -18,7 +18,7 @@ orchestration, hosted services (run it yourself).
 ## Development setup
 
 ```bash
-git clone https://github.com/CybrFlux/cybr-ghost
+git clone https://github.com/M4ST3R-C0NTR0L/cybr-ghost
 cd cybr-ghost
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
