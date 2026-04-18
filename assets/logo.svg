@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Cybr Ghost logo">
+  <defs>
+    <linearGradient id="cg-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="cg-circuit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#FF00E5"/>
+    </linearGradient>
+    <radialGradient id="cg-bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#0B0B18"/>
+      <stop offset="60%" stop-color="#05050C"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <radialGradient id="cg-glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cg-glow-magenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF00E5" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FF00E5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cg-bloom" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cg-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="cg-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#0E1B2E" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#cg-bg)"/>
+  <rect width="512" height="512" fill="url(#cg-grid)" opacity="0.6"/>
+
+  <!-- Ambient glows behind the ghost -->
+  <circle cx="256" cy="230" r="180" fill="url(#cg-glow-cyan)" opacity="0.35"/>
+  <circle cx="320" cy="340" r="120" fill="url(#cg-glow-magenta)" opacity="0.3"/>
+
+  <!-- Ghost silhouette: rounded top, wavy bottom -->
+  <g filter="url(#cg-bloom)">
+    <path d="M 256 84
+             C 176 84  108 148  108 232
+             L 108 410
+             C 108 424  124 430  136 418
+             L 162 392
+             C 174 380  194 380  206 392
+             L 230 416
+             C 242 428  262 428  274 416
+             L 298 392
+             C 310 380  330 380  342 392
+             L 368 418
+             C 380 430  396 424  396 410
+             L 396 232
+             C 396 148  336 84  256 84 Z"
+          fill="url(#cg-body)"
+          fill-opacity="0.18"
+          stroke="url(#cg-body)"
+          stroke-width="3.5"
+          stroke-linejoin="round"/>
+  </g>
+
+  <!-- Inner circuit traces -->
+  <g stroke="url(#cg-circuit)" stroke-width="1.8" fill="none" opacity="0.85" filter="url(#cg-soft)">
+    <path d="M 150 270 L 200 270 L 200 320 L 240 320"/>
+    <path d="M 312 260 L 360 260 L 360 330"/>
+    <path d="M 160 350 L 210 350"/>
+    <path d="M 290 350 L 355 350 L 355 390"/>
+    <path d="M 256 280 L 256 340"/>
+  </g>
+
+  <!-- Circuit node dots -->
+  <g fill="#00F0FF" filter="url(#cg-bloom)">
+    <circle cx="150" cy="270" r="3.5"/>
+    <circle cx="240" cy="320" r="3.5"/>
+    <circle cx="360" cy="260" r="3.5"/>
+    <circle cx="360" cy="330" r="3.5"/>
+    <circle cx="210" cy="350" r="3.5"/>
+    <circle cx="256" cy="340" r="4"/>
+  </g>
+  <g fill="#FF00E5" filter="url(#cg-bloom)">
+    <circle cx="200" cy="320" r="3"/>
+    <circle cx="355" cy="390" r="3"/>
+    <circle cx="290" cy="350" r="3"/>
+    <circle cx="256" cy="280" r="3"/>
+  </g>
+
+  <!-- Eyes (glowing) -->
+  <g filter="url(#cg-bloom)">
+    <circle cx="212" cy="206" r="16" fill="#00F0FF"/>
+    <circle cx="300" cy="206" r="16" fill="#00F0FF"/>
+    <circle cx="214" cy="204" r="5" fill="#FFFFFF"/>
+    <circle cx="302" cy="204" r="5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Data particles around the ghost -->
+  <g fill="#00F0FF" opacity="0.7" filter="url(#cg-soft)">
+    <rect x="68" y="128" width="2.5" height="10"/>
+    <rect x="82" y="162" width="2.5" height="6"/>
+    <rect x="58" y="280" width="2.5" height="8"/>
+    <rect x="430" y="118" width="2.5" height="8"/>
+    <rect x="448" y="204" width="2.5" height="12"/>
+    <rect x="418" y="320" width="2.5" height="6"/>
+    <circle cx="74" cy="380" r="1.8"/>
+    <circle cx="440" cy="380" r="1.8"/>
+    <circle cx="92" cy="230" r="1.5"/>
+    <circle cx="420" cy="260" r="1.5"/>
+  </g>
+  <g fill="#FF00E5" opacity="0.8" filter="url(#cg-soft)">
+    <rect x="78" y="348" width="2.5" height="7"/>
+    <rect x="440" y="148" width="2.5" height="7"/>
+    <circle cx="64" cy="204" r="1.5"/>
+    <circle cx="452" cy="350" r="1.5"/>
+  </g>
+</svg>

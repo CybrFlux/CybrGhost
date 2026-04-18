@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cybr-ghost"
+version = "0.1.0"
+description = "Stealth browser MCP server for AI agents — drives a real Firefox via Camoufox, passes Cloudflare, clicks like a human."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "CybrFlux" },
+]
+keywords = [
+    "mcp", "claude", "browser", "automation", "stealth",
+    "playwright", "ai-agent", "cloudflare", "anti-detect",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+    "camoufox[geoip]>=0.4.0",
+    "playwright>=1.47.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+cybr-ghost = "server:mcp.run"
+
+[project.urls]
+Homepage = "https://github.com/CybrFlux/cybr-ghost"
+Repository = "https://github.com/CybrFlux/cybr-ghost"
+Issues = "https://github.com/CybrFlux/cybr-ghost/issues"
+
+[tool.setuptools]
+py-modules = ["server"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
