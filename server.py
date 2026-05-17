@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cybr Ghost — stealth browser MCP server by CybrFlux.
+"""CybrGhost — stealth browser MCP server by CybrFlux.
 
 Exposes a real, human-like browser to AI agents via MCP. Survives bot
 detection (Cloudflare, DataDome, Turnstile) by presenting a consistent
@@ -22,7 +22,7 @@ from typing import Any
 from camoufox.async_api import AsyncCamoufox
 from mcp.server.fastmcp import FastMCP, Image
 
-mcp = FastMCP("cybr-ghost")
+mcp = FastMCP("CybrGhost")
 
 # Persistent browser state across tool calls (same MCP session).
 _cm: AsyncCamoufox | None = None

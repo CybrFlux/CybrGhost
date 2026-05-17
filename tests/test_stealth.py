@@ -1,4 +1,4 @@
-"""Cybr Ghost validation suite.
+"""CybrGhost validation suite.
 
 Three live tests with hard assertions:
   1. Sannysoft fingerprint — proves WebDriver / plugin / WebGL stealth.
@@ -23,7 +23,7 @@ os.environ.setdefault("CYBR_GHOST_HUMANIZE", "true")
 
 import server  # noqa: E402
 
-SHOTS = pathlib.Path("/tmp/cybr-ghost-test")
+SHOTS = pathlib.Path("/tmp/CybrGhost-test")
 SHOTS.mkdir(exist_ok=True)
 
 RESULTS: list[tuple[str, bool, str]] = []

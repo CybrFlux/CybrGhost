@@ -1,4 +1,4 @@
-# How Cybr Ghost Beats Bot Detection
+# How CybrGhost Beats Bot Detection
 
 A short, honest accounting of what works, what doesn't, and why.
 
@@ -12,7 +12,7 @@ A short, honest accounting of what works, what doesn't, and why.
 3. **Network signals** — TLS fingerprint (JA3/JA4), HTTP/2 frame order,
    IP reputation, header ordering.
 
-Cybr Ghost addresses (1) and (2). (3) is your proxy's problem.
+CybrGhost addresses (1) and (2). (3) is your proxy's problem.
 
 ## Fingerprint — what we clean up
 
@@ -20,7 +20,7 @@ Stock browser-automation toolchains leak bot-indicators in roughly eight
 places that popular detectors (Cloudflare, DataDome, Akamai Bot Manager)
 check:
 
-| Leak | Stock automation | Cybr Ghost |
+| Leak | Stock automation | CybrGhost |
 |---|---|---|
 | `navigator.webdriver` | `true` | absent |
 | `navigator.plugins.length` | `0` | `5+` |
@@ -39,7 +39,7 @@ values look native because they are native.
 
 ## Per-session fingerprint rotation
 
-On each launch, Cybr Ghost rolls a new consistent profile: OS, CPU count,
+On each launch, CybrGhost rolls a new consistent profile: OS, CPU count,
 screen size, font list, WebGL vendor/renderer, timezone. The set is
 internally consistent — a Mac profile doesn't get an NVIDIA GPU.
 
@@ -66,7 +66,7 @@ Linear mouse paths are the #1 behavioral tell. Humanize breaks that.
 ## What it does NOT solve
 
 - **Interactive CAPTCHAs** — reCAPTCHA v2 image challenges, hCaptcha.
-  Cybr Ghost can click the checkbox; if the detector escalates to a
+  CybrGhost can click the checkbox; if the detector escalates to a
   visual challenge, you need an external solver (2captcha, CapSolver).
 - **IP reputation** — if your datacenter IP is on a block list, no
   browser fingerprint saves you. Use residential proxies for hard

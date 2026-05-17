@@ -1,6 +1,6 @@
 # Architecture
 
-Cybr Ghost is three layers. Each can be swapped independently.
+CybrGhost is three layers. Each can be swapped independently.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -11,7 +11,7 @@ Cybr Ghost is three layers. Each can be swapped independently.
                            │ MCP over stdio (JSON-RPC 2.0)
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Cybr Ghost MCP server  (server.py)                        │
+│  CybrGhost MCP server  (server.py)                        │
 │  ─ FastMCP registers 16 tools.                              │
 │  ─ Each tool: grabs the active page → performs the          │
 │    primitive → runs the snapshot JS → returns text.         │
@@ -41,7 +41,7 @@ When the driver is **already an LLM** — as with Claude Code talking to this
 MCP server — that inner loop is redundant. You'd pay for two Claude calls
 per action: one driving the tool, one inside it deciding what to click.
 
-Cybr Ghost strips that out. The MCP client (Claude) is the planner.
+CybrGhost strips that out. The MCP client (Claude) is the planner.
 The server exposes primitives, not policies.
 
 ## Snapshot format

@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Cybr Ghost — Stealth Browser MCP for AI Agents" width="100%"/>
+<img src="assets/banner.svg" alt="CybrGhost — Stealth Browser MCP for AI Agents" width="100%"/>
+
+<sub>Built by [**CybrFlux**](https://cybrflux.com) — AI-native engineering studio.</sub>
 
 <br/>
 
@@ -21,7 +23,7 @@
 
 ## Table of contents
 
-- [Why Cybr Ghost](#why-cybr-ghost)
+- [Why CybrGhost](#why-CybrGhost)
 - [Features](#features)
 - [See it in action](#see-it-in-action)
 - [Quickstart](#quickstart)
@@ -39,7 +41,7 @@
 
 ---
 
-## Why Cybr Ghost
+## Why CybrGhost
 
 Give a smart AI agent a browser and it can research prices, fill forms,
 scrape data, manage portals, and run any workflow a human can drive in
@@ -52,12 +54,12 @@ Stock automation tooling (Playwright, Puppeteer, Selenium) leaks
 the user-agent string, and a dozen other tells that professional
 detectors check on the first JavaScript tick.
 
-Cybr Ghost closes those holes. It's a **thin MCP server** that exposes
+CybrGhost closes those holes. It's a **thin MCP server** that exposes
 a stealth browser to any MCP-speaking client (Claude Code, Claude
 Desktop, custom SDKs). You drive it; it survives detection.
 
 <div align="center">
-  <img src="assets/logo.svg" alt="Cybr Ghost" width="220"/>
+  <img src="assets/logo.svg" alt="CybrGhost" width="220"/>
 </div>
 
 ---
@@ -100,7 +102,7 @@ Desktop, custom SDKs). You drive it; it survives detection.
 **Google search — real results, no CAPTCHA interstitial:**
 
 <div align="center">
-  <img src="assets/demo-google.png" alt="Google search results rendered by Cybr Ghost" width="85%"/>
+  <img src="assets/demo-google.png" alt="Google search results rendered by CybrGhost" width="85%"/>
 </div>
 
 **Fingerprint check at bot.sannysoft.com — the classic bot-detection test page:**
@@ -115,8 +117,8 @@ Desktop, custom SDKs). You drive it; it survives detection.
 
 ```bash
 # 1. Clone + install
-git clone https://github.com/M4ST3R-C0NTR0L/cybr-ghost
-cd cybr-ghost
+git clone https://github.com/CybrFlux/CybrGhost
+cd CybrGhost
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
@@ -142,8 +144,8 @@ python3.12 -m venv .venv
 ### Steps
 
 ```bash
-git clone https://github.com/M4ST3R-C0NTR0L/cybr-ghost
-cd cybr-ghost
+git clone https://github.com/CybrFlux/CybrGhost
+cd CybrGhost
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python -m camoufox fetch
@@ -158,10 +160,10 @@ Edit `~/.claude/settings.json` and add under `mcpServers`:
 ```json
 {
   "mcpServers": {
-    "cybr-ghost": {
+    "CybrGhost": {
       "type": "stdio",
-      "command": "/absolute/path/to/cybr-ghost/.venv/bin/python",
-      "args": ["/absolute/path/to/cybr-ghost/server.py"],
+      "command": "/absolute/path/to/CybrGhost/.venv/bin/python",
+      "args": ["/absolute/path/to/CybrGhost/server.py"],
       "env": {
         "CYBR_GHOST_HEADLESS": "false",
         "CYBR_GHOST_HUMANIZE": "true",
@@ -172,9 +174,9 @@ Edit `~/.claude/settings.json` and add under `mcpServers`:
 }
 ```
 
-Replace `/absolute/path/to/cybr-ghost` with the actual clone path.
-**Restart Claude Code.** The tools surface as `mcp__cybr-ghost__navigate`,
-`mcp__cybr-ghost__click`, etc.
+Replace `/absolute/path/to/CybrGhost` with the actual clone path.
+**Restart Claude Code.** The tools surface as `mcp__CybrGhost__navigate`,
+`mcp__CybrGhost__click`, etc.
 
 ---
 
@@ -296,7 +298,7 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the full rundown.
 TL;DR:
 
 ```
-Claude Code (planner) ─MCP─▶ Cybr Ghost server ─▶ Stealth browser runtime
+Claude Code (planner) ─MCP─▶ CybrGhost server ─▶ Stealth browser runtime
 ```
 
 The server holds one browser per MCP session. Every tool returns a
@@ -401,7 +403,7 @@ anyway.
 
 ## License & attribution
 
-Cybr Ghost is released under the [MIT License](LICENSE).
+CybrGhost is released under the [MIT License](LICENSE).
 
 See [`NOTICE`](NOTICE) for third-party components and their licenses.
 
@@ -413,3 +415,37 @@ See [`NOTICE`](NOTICE) for third-party components and their licenses.
 *Give your agents the web.*
 
 </div>
+
+<!-- CYBRFLUX_README_FOOTER_START -->
+---
+
+## More from CybrFlux
+
+The full open-source family — drop-in tools for AI-native engineering, marketing, and ops:
+
+| Product | What it does |
+|---|---|
+| **[CybrGhost](https://github.com/CybrFlux/CybrGhost)** | Stealth browser MCP for AI agents — drives real Firefox, passes Cloudflare |
+| **[CybrScrape](https://github.com/CybrFlux/CybrScrape)** | Adaptive web scraping framework — self-healing selectors, anti-bot bypass |
+| **[CybrScan](https://github.com/CybrFlux/CybrScan)** | AI website inspector — Playwright + vision model, deep design/SEO/UX analysis |
+| **[CybrRoast](https://github.com/CybrFlux/CybrRoast)** | Brutal website SEO/perf/design roaster with technical scores |
+| **[CybrLint](https://github.com/CybrFlux/CybrLint)** | Code-quality roaster that tells it like it is |
+| **[CybrCommit](https://github.com/CybrFlux/CybrCommit)** | AI git commit message generator — never write a commit message again |
+| **[CybrOutreach](https://github.com/CybrFlux/CybrOutreach)** | AI-powered personalized cold email generator |
+| **[CybrVox](https://github.com/CybrFlux/CybrVox)** | Open-source voice agent framework — build voice agents in ~20 lines of TypeScript |
+| **[CybrKit](https://github.com/CybrFlux/CybrKit)** | Ship your SaaS in days, not months. Production-ready Next.js starter |
+| **[CybrLink](https://github.com/CybrFlux/CybrLink)** | Composio-style connector engine — data-driven integration manifests |
+| **[CybrCode](https://github.com/CybrFlux/CybrCode)** | AI-powered terminal development tool — fork of Claude Code |
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
+
+## Maintained by CybrFlux
+
+Built and maintained by **[CybrFlux](https://cybrflux.com)** — an AI-native engineering studio shipping production-grade open-source tools.
+
+Questions: [`platform@cybrflux.online`](mailto:platform@cybrflux.online)
+
+<a href="https://cybrflux.com"><img src="./assets/cybrflux-wordmark.png" alt="CybrFlux" height="40"/></a>
+<!-- CYBRFLUX_README_FOOTER_END -->

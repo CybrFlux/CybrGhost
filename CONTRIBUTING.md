@@ -1,11 +1,11 @@
-# Contributing to Cybr Ghost
+# Contributing to CybrGhost
 
 Thanks for your interest. A few ground rules to keep the project small, sharp,
 and useful.
 
 ## Scope
 
-Cybr Ghost is deliberately a **thin** MCP server. The intelligence lives in
+CybrGhost is deliberately a **thin** MCP server. The intelligence lives in
 whatever LLM is driving (usually Claude). Tools are added only when existing
 primitives genuinely can't express the action.
 
@@ -18,8 +18,8 @@ orchestration, hosted services (run it yourself).
 ## Development setup
 
 ```bash
-git clone https://github.com/M4ST3R-C0NTR0L/cybr-ghost
-cd cybr-ghost
+git clone https://github.com/CybrFlux/CybrGhost
+cd CybrGhost
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/pip install -e ".[dev]"
@@ -53,7 +53,7 @@ Expect ~60 seconds of runtime end-to-end.
 
 ## Reporting stealth regressions
 
-If a previously-passing target now blocks Cybr Ghost:
+If a previously-passing target now blocks CybrGhost:
 
 1. Confirm the target actually changed (try a second run, different locale).
 2. Capture `snapshot()` output + a `screenshot()` from the failing run.
