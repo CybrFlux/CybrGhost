@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="CybrGhost — Stealth Browser MCP for AI Agents" width="100%"/>
+<img src="assets/banner.jpg" alt="CybrGhost — Stealth Browser MCP for AI Agents" width="100%"/>
 
 <sub>Built by [**CybrFlux**](https://cybrflux.com) — AI-native engineering studio.</sub>
 
