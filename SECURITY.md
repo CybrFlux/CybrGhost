@@ -32,4 +32,4 @@ Out of scope: third-party dependencies (report upstream), social engineering, de
 
 ---
 
-Maintained by **[CybrFlux](https://cybrflux.com)**.
+Maintained by **[CybrFlux](https://cybrflux.online)**.

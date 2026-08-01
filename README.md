@@ -2,11 +2,11 @@
 
 <img src="assets/banner.jpg" alt="CybrGhost — Stealth Browser MCP for AI Agents" width="100%"/>
 
-<sub>Built by [**CybrFlux**](https://cybrflux.com) — AI-native engineering studio.</sub>
+<sub>Built by [**CybrFlux**](https://cybrflux.online) — AI-native engineering studio.</sub>
 
 <br/>
 
-**A stealth browser MCP server by [CybrFlux](https://cybrflux.com).**
+**A stealth browser MCP server by [CybrFlux](https://cybrflux.online).**
 **Drives a real Firefox. Passes Cloudflare. Clicks like a human. Built to be driven by Claude.**
 
 <br/>
@@ -411,7 +411,7 @@ See [`NOTICE`](NOTICE) for third-party components and their licenses.
 
 <div align="center">
 
-**Built with ♥ by [CybrFlux](https://cybrflux.com).**
+**Built with ♥ by [CybrFlux](https://cybrflux.online).**
 *Give your agents the web.*
 
 </div>
@@ -443,9 +443,9 @@ MIT — see [LICENSE](./LICENSE).
 
 ## Maintained by CybrFlux
 
-Built and maintained by **[CybrFlux](https://cybrflux.com)** — an AI-native engineering studio shipping production-grade open-source tools.
+Built and maintained by **[CybrFlux](https://cybrflux.online)** — an AI-native engineering studio shipping production-grade open-source tools.
 
 Questions: [`platform@cybrflux.online`](mailto:platform@cybrflux.online)
 
-<a href="https://cybrflux.com"><img src="./assets/cybrflux-wordmark.png" alt="CybrFlux" height="40"/></a>
+<a href="https://cybrflux.online"><img src="./assets/cybrflux-wordmark.png" alt="CybrFlux" height="40"/></a>
 <!-- CYBRFLUX_README_FOOTER_END -->

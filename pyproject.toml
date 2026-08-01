@@ -45,7 +45,7 @@ dev = [
 CybrGhost = "server:mcp.run"
 
 [project.urls]
-Homepage = "https://cybrflux.com"
+Homepage = "https://cybrflux.online"
 Repository = "https://github.com/CybrFlux/CybrGhost"
 Issues = "https://github.com/CybrFlux/CybrGhost/issues"
 
