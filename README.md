@@ -7,7 +7,7 @@
 <br/>
 
 **A stealth browser MCP server by [CybrFlux](https://cybrflux.online).**
-**Drives a real Firefox. Passes Cloudflare. Clicks like a human. Built to be driven by AI.**
+**Drives a real Firefox. Clicks like a human. Built to be driven by AI.**
 
 <br/>
 
