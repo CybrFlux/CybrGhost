@@ -59,7 +59,7 @@ a stealth browser to any MCP-speaking client (Claude Code, Claude
 Desktop, custom SDKs). You drive it; it survives detection.
 
 <div align="center">
-  <img src="assets/logo.svg" alt="CybrGhost" width="220"/>
+  <img src="assets/logo.png" alt="CybrGhost" width="220"/>
 </div>
 
 ---
